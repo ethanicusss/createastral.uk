@@ -1,0 +1,64 @@
+.index {
+	background-color: #666;
+	background-image: url("content/images/space-background.png");
+	background-repeat: no-repeat;
+	background-position: left bottom;
+	background-attachment: fixed;
+	background-size: 100% auto;
+}
+
+.content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.box {
+	background-color: rgba(28, 29, 56, 0.5);
+	opacity: 0.9;
+	backdrop-filter: blur(8px);
+	height: 600px;
+	padding: 8px;
+	box-shadow: 0px 5px 30px 0px rgb(164, 69, 237);
+}
+
+.link-box {
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+	overflow: hidden;
+	margin: 20px 10px;
+	valign: none;
+}
+
+.link-box .logo-link {
+	background-color: #333;
+	opacity: 0.9;
+	margin: 5px;
+	float: left;
+	box-shadow: 0px 5px 30px 0px rgb(164, 69, 237);
+}
+
+.link-content{
+	padding: 14px 16px;
+	display: block;
+}
+
+.link-content img{
+	vertical-align: middle;
+}
+
+.logo-icon {
+	width: 24px;
+	height: 24px;
+}
+
+html {
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+}
+
+a {
+	color: white;
+	text-decoration-line: none;
+}
