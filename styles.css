@@ -2,7 +2,7 @@
     color: white;
 	font-family: monospace;
 
-    --block-width: max(30vw, 300px);
+    --block-width: min(400px, max(30vw, 250px));
 }
 
 * {
@@ -22,6 +22,13 @@
     align-items: center;
 }
 
+.main-logo {
+    width: 100%;
+    height: auto;
+    max-width: 300px;
+    margin-inline: 10px;
+}
+
 .sr-only {
     position: absolute;
     width: 1px;
@@ -38,7 +45,7 @@
     width: var(--block-width);
     height: var(--block-width);
     perspective: 4000px;
-	margin-top: calc(.3 * var(--block-width));
+	margin: calc(.4 * var(--block-width)) 0;
 }
 
 .block {
@@ -81,6 +88,9 @@
 	text-decoration: none;
 	font-size: calc(.1 * var(--block-width));
 }
+.block-side-inner a:is(:hover, :focus-visible) {
+	text-decoration: underline;
+}
 
 .block-side-inner a::after {
     position: absolute;
@@ -113,4 +123,10 @@
 
 .side-top.block-side:has(a:is(:hover, :focus-visible)) .block-side-inner {
     transform: scale(1.1) rotate(45deg);
+}
+
+div.content {
+    width: 100%;
+    max-width: 1100px;
+    margin-inline: 10px;
 }
